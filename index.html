@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier | Your One-Stop Shopping Destination</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="navbar-fixed">
+        <nav class="teal darken-2">
+            <div class="nav-wrapper container">
+                <a href="#!" class="brand-logo">Premier Online Shopping</a>
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#" class="active" data-category="all">All</a></li>
+                    <li><a href="#" data-category="electronics">Electronics</a></li>
+                    <li><a href="#" data-category="clothing">Clothing</a></li>
+                    <li><a href="#" data-category="furniture">Furniture</a></li>
+                    <li><a href="#" data-category="groceries">Groceries</a></li>
+                    <li><a href="cart.html"><i class="material-icons">shopping_cart</i></a></li>
+                    <li><a href="#"><i class="material-icons">search</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <ul class="sidenav" id="mobile-nav">
+        <li><a href="#" data-category="all">All Products</a></li>
+        <li><a href="#" data-category="electronics">Electronics</a></li>
+        <li><a href="#" data-category="clothing">Clothing</a></li>
+        <li><a href="#" data-category="furniture">Furniture</a></li>
+        <li><a href="#" data-category="groceries">Groceries</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="cart.html"><i class="material-icons left">shopping_cart</i>Cart</a></li>
+        <li><a href="#"><i class="material-icons left">search</i>Search</a></li>
+    </ul>
+
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+        <div class="container">
+            <h1>Welcome to Premier Online Shopping</h1>
+            <p>Your one-stop destination for all your shopping needs</p>
+            <a href="#featured-products" class="btn-large waves-effect waves-light teal darken-2">Shop Now</a>
+        </div>
+    </div>
+
+    <!-- Featured Categories -->
+    <section class="categories section">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="center-align">Featured Categories</h2>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card category-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1526738549149-8e07eca6c147?auto=format&fit=crop&w=500&q=80" alt="Electronics">
+                            <span class="card-title">Electronics</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Discover the latest gadgets and tech essentials.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#" class="teal-text" data-category="electronics">Shop Electronics</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card category-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=500&q=80" alt="Clothing">
+                            <span class="card-title">Clothing</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Trendy fashion for every style and occasion.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#" class="teal-text" data-category="clothing">Shop Clothing</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card category-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=500&q=80" alt="Furniture">
+                            <span class="card-title">Furniture</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Stylish furniture to transform your space.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#" class="teal-text" data-category="furniture">Shop Furniture</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="featured-products" class="section grey lighten-4">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="center-align">Featured Products</h2>
+                </div>
+            </div>
+            <div class="row" id="product-list">
+                <!-- Products will be loaded here via JavaScript -->
+                <div class="center-align">
+                    <div class="preloader-wrapper big active">
+                        <div class="spinner-layer spinner-teal-only">
+                            <div class="circle-clipper left">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="gap-patch">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="circle-clipper right">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col s12 m6">
+                    <img id="modal-product-image" src="" alt="Product" class="responsive-img">
+                </div>
+                <div class="col s12 m6">
+                    <h4 id="modal-product-title"></h4>
+                    <p id="modal-product-category" class="chip"></p>
+                    <h5 id="modal-product-price"></h5>
+                    <p id="modal-product-description"></p>
+                    <div class="input-field">
+                        <select id="product-quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <label>Quantity</label>
+                    </div>
+                    <button class="btn-large waves-effect waves-light teal darken-2 add-to-cart">
+                        <i class="material-icons left">add_shopping_cart</i> Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-teal btn-flat">Close</a>
+        </div>
+    </div>
+
+    <!-- Newsletter -->
+    <section class="section teal lighten-5">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6">
+                    <h3>Subscribe to our Newsletter</h3>
+                    <p>Get the latest products and promotions delivered to your inbox.</p>
+                </div>
+                <div class="col s12 m6">
+                    <div class="input-field">
+                        <input type="email" id="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                    <button class="btn waves-effect waves-light teal darken-2">Subscribe
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer teal darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4">
+                    <h5 class="white-text">Premier Online SHhopping</h5>
+                    <p class="grey-text text-lighten-4">Your one-stop shopping destination for clothes, furniture, electronics, and more.</p>
+                </div>
+                <div class="col s12 m4">
+                    <h5 class="white-text">Quick Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
+                        <li><a class="grey-text text-lighten-3" href="contact.html">Contact</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">FAQs</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Shipping & Returns</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 m4">
+                    <h5 class="white-text">Connect With Us</h5>
+                    <div class="social-icons">
+                        <a href="#!" class="white-text"><i class="material-icons">facebook</i></a>
+                        <a href="#!" class="white-text"><i class="material-icons">twitter</i></a>
+                        <a href="#!" class="white-text"><i class="material-icons">instagram</i></a>
+                        <a href="#!" class="white-text"><i class="material-icons">linkedIn</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2O25 Shopping made simple. All rights reserved.
+                <a class="grey-text text-lighten-4 right" href="#!">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | ShopEase</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="navbar-fixed">
+        <nav class="teal darken-2">
+            <div class="nav-wrapper container">
+                <a href="index.html" class="brand-logo">ShopEase</a>
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html" data-category="all">All</a></li>
+                    <li><a href="index.html" data-category="electronics">Electronics</a></li>
+                    <li><a href="index.html" data-category="clothing">Clothing</a></li>
+                    <li><a href="index.html" data-category="furniture">Furniture</a></li>
+                    <li><a href="index.html" data-category="groceries">Groceries</a></li>
+                    <li><a href="cart.html" class="active"><i class="material-icons">shopping_cart</i></a></li>
+                    <li><a href="#"><i class="material-icons">search</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <ul class="sidenav" id="mobile-nav">
+        <li><a href="index.html" data-category="all">All Products</a></li>
+        <li><a href="index.html" data-category="electronics">Electronics</a></li>
+        <li><a href="index.html" data-category="clothing">Clothing</a></li>
+        <li><a href="index.html" data-category="furniture">Furniture</a></li>
+        <li><a href="index.html" data-category="groceries">Groceries</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="cart.html" class="active"><i class="material-icons left">shopping_cart</i>Cart</a></li>
+        <li><a href="#"><i class="material-icons left">search</i>Search</a></li>
+    </ul>
+
+    <!-- Cart Section -->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h1 class="center-align">Your Shopping Cart</h1>
+                </div>
+            </div>
+            
+            <div id="cart-container">
+                <!-- Cart items will be displayed here -->
+                <div class="center-align">
+                    <div class="preloader-wrapper big active">
+                        <div class="spinner-layer spinner-teal-only">
+                            <div class="circle-clipper left">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="gap-patch">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="circle-clipper right">
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row" id="cart-actions" style="display: none;">
+                <div class="col s12 m6 offset-m6">
+                    <div class="card">
+                        <div class="card-content">
+                            <h5>Order Summary</h5>
+                            <div class="divider"></div>
+                            <table class="highlight">
+                                <tbody>
+                                    <tr>
+                                        <td>Subtotal</td>
+                                        <td id="subtotal" class="right-align">$0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shipping</td>
+                                        <td id="shipping" class="right-align">$0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tax (10%)</td>
+                                        <td id="tax" class="right-align">$0.00</td>
+                                    </tr>
+                                    <tr class="teal-text">
+                                        <td><strong>Total</strong></td>
+                                        <td id="total" class="right-align"><strong>$0.00</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-action">
+                            <button class="btn-large waves-effect waves-light teal darken-2 checkout-btn">
+                                Proceed to Checkout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col s12 center-align">
+                    <a href="index.html" class="btn waves-effect waves-light teal lighten-1">
+                        <i class="material-icons left">arrow_back</i>Continue Shopping
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer teal darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4">
+                    <h5 class="white-text">ShopEase</h5>
+                    <p class="grey-text text-lighten-4">Your one-stop shopping destination for clothes, furniture, electronics, and more.</p>
+                </div>
+                <div class="col s12 m4">
+                    <h5 class="white-text">Quick Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">FAQs</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Shipping & Returns</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 m4">
+                    <h5 class="white-text">Connect With Us</h5>
+                    <div class="social-icons">
+                        <a href="#!" class="white-text"><i class="material-icons">facebook</i></a>
+                        <a href="#!" class="white-text"><i class="material-icons">twitter</i></a>
+                        <a href="#!" class="white-text"><i class="material-icons">instagram</i></a>
+                        <a href="#!" class="white-text"><i class="material-icons">pinterest</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2023 ShopEase. All rights reserved.
+                <a class="grey-text text-lighten-4 right" href="#!">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html> 

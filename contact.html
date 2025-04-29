@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | ShopEase</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="navbar-fixed">
+        <nav class="teal darken-2">
+            <div class="nav-wrapper container">
+                <a href="index.html" class="brand-logo">Premier Online Shopping</a>
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">All</a></li>
+                    <li><a href="index.html">Electronics</a></li>
+                    <li><a href="index.html">Clothing</a></li>
+                    <li><a href="index.html">Furniture</a></li>
+                    <li><a href="index.html">Groceries</a></li>
+                    <li><a href="cart.html"><i class="material-icons">shopping_cart</i></a></li>
+                    <li><a href="#"><i class="material-icons">search</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <ul class="sidenav" id="mobile-nav">
+        <li><a href="index.html">All Products</a></li>
+        <li><a href="index.html">Electronics</a></li>
+        <li><a href="index.html">Clothing</a></li>
+        <li><a href="index.html">Furniture</a></li>
+        <li><a href="index.html">Groceries</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="cart.html"><i class="material-icons left">shopping_cart</i>Cart</a></li>
+        <li><a href="#"><i class="material-icons left">search</i>Search</a></li>
+    </ul>
+
+    <!-- Hero Section -->
+    <section class="contact-hero teal darken-1 white-text">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <h1>Contact Us</h1>
+                    <p class="flow-text">We'd love to hear from you! Get in touch with our team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card-panel center-align">
+                        <i class="material-icons large teal-text">location_on</i>
+                        <h5>Our Location</h5>
+                        <p>Kakoba Grounds</p>
+                        <p>Mbarara-City</p>
+                        <p>Uganda</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card-panel center-align">
+                        <i class="material-icons large teal-text">phone</i>
+                        <h5>Call Us</h5>
+                        <p>Customer Support: +256 703970782</p>
+                        <p>Sales Inquiries: +256 773812951</p>
+                        <p>Shopping is 24/7</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card-panel center-align">
+                        <i class="material-icons large teal-text">email</i>
+                        <h5>Email Us</h5>
+                        <p>General: mokioswald884@gmail.com</p>
+                        <p>Support: support@premier.com</p>
+                        <p>Feedback: feedback@premier.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="section grey lighten-4">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="center-align">Send Us a Message</h2>
+                </div>
+                <div class="col s12 m8 offset-m2">
+                    <div class="card">
+                        <div class="card-content">
+                            <form id="contact-form">
+                                <div class="row">
+                                    <div class="input-field col s12 m6">
+                                        <i class="material-icons prefix">person</i>
+                                        <input id="name" type="text" class="validate" required>
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <i class="material-icons prefix">email</i>
+                                        <input id="email" type="email" class="validate" required>
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">phone</i>
+                                        <input id="phone" type="tel" class="validate">
+                                        <label for="phone">Your Phone (Optional)</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">subject</i>
+                                        <select id="subject">
+                                            <option value="" disabled selected>Choose a subject</option>
+                                            <option value="general">General Inquiry</option>
+                                            <option value="support">Customer Support</option>
+                                            <option value="feedback">Feedback</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                        <label>Subject</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">message</i>
+                                        <textarea id="message" class="materialize-textarea" required></textarea>
+                                        <label for="message">Your Message</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 center-align">
+                                        <button class="btn-large waves-effect waves-light teal darken-2" type="submit">
+                                            Send Message
+                                            <i class="material-icons right">send</i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h2 class="center-align">Find Us</h2>
+                </div>
+                <div class="col s12">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="map-container">
+                                <!-- Placeholder for an actual map implementation -->
+                                <img src="C:\Users\PETER\Desktop\online store\Img\Kakoba.png" alt="Map" class="responsive-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer teal darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4">
+                    <h5 class="white-text">ShopEase</h5>
+                    <p class="grey-text text-lighten-4">Your one-stop shopping destination for clothes, furniture, electronics, and more.</p>
+                </div>
+                <div class="col s12 m4">
+                    <h5 class="white-text">Quick Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
+                        <li><a class="grey-text text-lighten-3" href="contact.html">Contact</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">FAQs</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Shipping & Returns</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 m4">
+                    <h5 class="white-text">Connect With Us</h5>
+                    <div class="social-icons">
+                        <a href="#!" class="white-text"><i class="material-icons">facebook</i></a>
+                        <a href="#!" class="white-text"><i class="material-icons">twitter</i></a>
+                        <a href="#!" class="white-text"><i class="material-icons">instagram</i></a>
+                        <a href="#!" class="white-text"><i class="material-icons">pinterest</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2023 ShopEase. All rights reserved.
+                <a class="grey-text text-lighten-4 right" href="#!">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Materialize components
+            const sidenavs = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(sidenavs);
+            
+            const selects = document.querySelectorAll('select');
+            M.FormSelect.init(selects);
+            
+            // Contact form submission
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // In a real application, you would send this data to a server
+                    const formData = {
+                        name: document.getElementById('name').value,
+                        email: document.getElementById('email').value,
+                        phone: document.getElementById('phone').value,
+                        subject: document.getElementById('subject').value,
+                        message: document.getElementById('message').value
+                    };
+                    
+                    console.log('Form submission:', formData);
+                    
+                    // Show success message
+                    M.toast({html: 'Message sent successfully! We\'ll get back to you soon.', classes: 'rounded teal'});
+                    
+                    // Reset form
+                    contactForm.reset();
+                    M.FormSelect.init(document.querySelector('#subject'));
+                });
+            }
+            
+            // Add custom styles
+            const style = document.createElement('style');
+            style.textContent = `
+                .contact-hero {
+                    padding: 6rem 0;
+                    background: linear-gradient(rgba(0, 121, 107, 0.8), rgba(0, 121, 107, 0.8)), url('https://images.unsplash.com/photo-1573497620053-ea5300f94f21?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+                }
+                
+                .map-container {
+                    width: 100%;
+                    height: 400px;
+                    overflow: hidden;
+                }
+                
+                .card-panel {
+                    height: 100%;
+                }
+                
+                .card-panel i.large {
+                    font-size: 4rem;
+                    margin: 1rem 0;
+                }
+            `;
+            document.head.appendChild(style);
+            
+            // Load cart badge if available
+            loadCartBadge();
+            
+            function loadCartBadge() {
+                const savedCart = localStorage.getItem('shopEaseCart');
+                if (savedCart) {
+                    const cart = JSON.parse(savedCart);
+                    const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+                    
+                    if (cartCount > 0) {
+                        // Add cart badge if doesn't exist
+                        const cartLinks = document.querySelectorAll('nav li a i.material-icons');
+                        cartLinks.forEach(icon => {
+                            if (icon.textContent === 'shopping_cart') {
+                                const li = icon.closest('li');
+                                if (!li.classList.contains('cart-badge')) {
+                                    li.classList.add('cart-badge');
+                                    
+                                    // Add badge element if it doesn't exist
+                                    if (!li.querySelector('.badge')) {
+                                        const badge = document.createElement('span');
+                                        badge.className = 'badge';
+                                        li.appendChild(badge);
+                                    }
+                                }
+                                
+                                // Update badge count
+                                const badge = li.querySelector('.badge');
+                                badge.textContent = cartCount;
+                                badge.style.display = 'block';
+                            }
+                        });
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html> 
